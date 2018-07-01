@@ -363,7 +363,7 @@ function prereqs {
 	#
 	# It's a Ubuntu system
 	# 
-	elif [ -f /etc/lsb-release -a ! -f /etc/SuSE-release ]
+	if [ -f /etc/lsb-release -a ! -f /etc/SuSE-release ]
 	then
 		SYSTYPE=Ubuntu
 		apt-get -y purge 'gnuradio-*' >>$LOGDEV 2>&1
