@@ -197,7 +197,7 @@ do
 done
 
 CWD=`pwd`
-SUDOASKED=n
+SUDOASKED=y
 SYSTYPE=unknown
 good_to_go=no
 for file in /etc/fedora-release /etc/linuxmint/info /etc/lsb-release /etc/debian_version /etc/redhat-release
