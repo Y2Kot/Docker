@@ -1,4 +1,4 @@
-FROM y2kot/limebase
+FROM y2kot/osmobase
 MAINTAINER Y2Kot
 
 RUN \
@@ -38,9 +38,9 @@ RUN autoreconf -fi && ./configure --enable-trx && make -j4 && make install && ld
 
 WORKDIR /home
 
-RUN wget https://raw.githubusercontent.com/Y2Kot/Docker/master/OsmoConfigs/openbsc.cfg
+#RUN wget https://raw.githubusercontent.com/Y2Kot/Docker/master/OsmoConfigs/openbsc.cfg
 RUN wget https://raw.githubusercontent.com/Y2Kot/Docker/master/OsmoConfigs/osmo-trx.cfg
-RUN wget https://raw.githubusercontent.com/Y2Kot/Docker/master/OsmoConfigs/osmo-bts.cfg
+#RUN wget https://raw.githubusercontent.com/Y2Kot/Docker/master/OsmoConfigs/osmo-bts.cfg
 
 COPY startBTS /home/
 RUN chmod +x startBTS

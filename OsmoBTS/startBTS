@@ -1,0 +1,3 @@
+screen -dmS nitb osmo-nitb
+screen -dmS osmo-bts-trx
+screen -dmS trx osmo-trx-lms
